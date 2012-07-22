@@ -29,5 +29,8 @@
 
 - (IBAction)effectStars:(id)sender;
 - (IBAction)effectHearts:(id)sender;
+- (IBAction)effectLOL:(id)sender;
+- (IBAction)effectFire:(id)sender;
+- (IBAction)effectZZZ:(id)sender;
 
 @end

@@ -128,7 +128,48 @@ particleEmitter.emitterCells = [NSArray arrayWithObjects:emitter1, nil];
 
 }
 
-
+- (IBAction)effectZZZ:(id)sender
+{
+    //set ref to the layer
+    particleEmitter = (CAEmitterLayer*)self.layer; //2
+    //configure the emitter layer
+    particleEmitter.emitterPosition = CGPointMake(50, 50);
+    particleEmitter.emitterSize = CGSizeMake(10, 10);
+    birthRate = 10;
+    
+    
+    
+    ///////////////////
+    CAEmitterCell* heartEmitter = [CAEmitterCell emitterCell];
+    heartEmitter.birthRate = 0.0;
+    heartEmitter.lifetime = 3.5;
+    heartEmitter.lifetimeRange = 0.5;
+    heartEmitter.color = [[UIColor colorWithRed:0.4 green:0.2 blue:0.8 alpha:0.8] CGColor];
+    heartEmitter.contents = (id)[[UIImage imageNamed:@"zzz1.png"] CGImage];
+    [heartEmitter setName:@"emitter1"];
+    
+    heartEmitter.velocity = 50;
+    heartEmitter.velocityRange = 100;
+    
+    heartEmitter.emissionLatitude = M_PI_2;
+    heartEmitter.emissionLongitude = 0;//M_PI_2;
+    heartEmitter.emissionRange = M_PI_2;
+    heartEmitter.emissionRange = M_PI;
+    
+    heartEmitter.scaleSpeed = 0.5;
+    heartEmitter.spin = 0;
+    heartEmitter.redRange = .3;
+    heartEmitter.greenRange = .1;
+    heartEmitter.blueRange = .1;
+    ///////////////////////
+    
+    particleEmitter.renderMode = kCAEmitterLayerAdditive;
+    //fireEmitter.renderMode = kCAEmitterLayerUnordered;
+    
+    //add the cell to the layer and we're done
+    particleEmitter.emitterCells = [NSArray arrayWithObjects:heartEmitter, nil];
+    
+} 
 
 - (IBAction)effectFire:(id)sender
 {
@@ -224,6 +265,49 @@ particleEmitter.emitterCells = [NSArray arrayWithObjects:emitter1, nil];
 	heartEmitter.redRange = 100;
 	heartEmitter.greenRange = 20;
 	heartEmitter.blueRange = 5;
+	///////////////////////
+	
+    particleEmitter.renderMode = kCAEmitterLayerAdditive;
+    //fireEmitter.renderMode = kCAEmitterLayerUnordered;
+	
+	//add the cell to the layer and we're done
+    particleEmitter.emitterCells = [NSArray arrayWithObjects:heartEmitter, nil];
+    
+}
+
+- (IBAction)effectLOL:(id)sender
+{
+    //set ref to the layer
+    particleEmitter = (CAEmitterLayer*)self.layer; //2
+    //configure the emitter layer
+    particleEmitter.emitterPosition = CGPointMake(50, 50);
+    particleEmitter.emitterSize = CGSizeMake(10, 10);
+	birthRate = 10;
+    
+    
+    
+	///////////////////
+	CAEmitterCell* heartEmitter = [CAEmitterCell emitterCell];
+    heartEmitter.birthRate = 0.0;
+    heartEmitter.lifetime = 1.0;
+    heartEmitter.lifetimeRange = 0.5;
+    heartEmitter.color = [[UIColor colorWithRed:0.3 green:0.84 blue:0.2 alpha:0.8] CGColor];
+	heartEmitter.contents = (id)[[UIImage imageNamed:@"LOL1.png"] CGImage];
+    [heartEmitter setName:@"emitter1"];
+	
+    heartEmitter.velocity = 100;
+    heartEmitter.velocityRange = 100;
+	
+	heartEmitter.emissionLatitude = M_PI_2;
+	heartEmitter.emissionLongitude = 0;//M_PI_2;
+    heartEmitter.emissionRange = M_PI_2;
+    heartEmitter.emissionRange = M_PI;
+    
+    heartEmitter.scaleSpeed = 0.5;
+    heartEmitter.spin = .1;
+	heartEmitter.redRange = .1;
+	heartEmitter.greenRange = .1;
+	heartEmitter.blueRange = .1;
 	///////////////////////
 	
     particleEmitter.renderMode = kCAEmitterLayerAdditive;

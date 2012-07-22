@@ -372,6 +372,20 @@ bail:
 	});
 }
 
+
+- (IBAction)moon:(id)sender
+{
+    
+    CGRect Center = CGRectMake(previewView.center.x, previewView.center.y,0, 0);
+        
+    [UIView animateWithDuration:5.0 animations:^{
+        previewView.frame = Center;
+        particleView.frame = Center;
+        
+        
+    } ]; 
+}
+
 // main action method to take a still image -- if face detection has been turned on and a face has been detected
 // the square overlay will be composited on top of the captured image and saved to the camera roll
 - (IBAction)takePicture:(id)sender
@@ -470,7 +484,8 @@ bail:
 // turn on/off face detection
 - (IBAction)toggleFaceDetection:(id)sender
 {
-	detectFaces = [(UISwitch *)sender isOn];
+	//detectFaces = [(UISwitch *)sender isOn];
+	detectFaces = !detectFaces;
 	[[videoDataOutput connectionWithMediaType:AVMediaTypeVideo] setEnabled:detectFaces];
 	if (!detectFaces) {
 		dispatch_async(dispatch_get_main_queue(), ^(void) {
@@ -780,9 +795,10 @@ bail:
 
     [super viewDidLoad];
 	previewView.transform = CGAffineTransformMakeRotation(-M_PI_2);
+	particleView.transform =CGAffineTransformMakeScale(1,-1);
 	// Do any additional setup after loading the view, typically from a nib.
 	[self setupAVCapture];
-	square = [UIImage imageNamed:@"squarePNG"];
+	square = [UIImage imageNamed:@"face_spiral"];
 	NSDictionary *detectorOptions = [[NSDictionary alloc] initWithObjectsAndKeys:CIDetectorAccuracyLow, CIDetectorAccuracy, nil];
 	faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:nil options:detectorOptions];
 	
@@ -840,7 +856,7 @@ bail:
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return ( (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight) );
+	return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
     // Return YES for supported orientations
 //	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }

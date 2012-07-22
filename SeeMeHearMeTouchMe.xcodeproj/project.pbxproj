@@ -69,6 +69,7 @@
 		72CA4DAD15BB985A007FCD2C /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CA4DA815BB985A007FCD2C /* star2.png */; };
 		72CA4DAE15BB985A007FCD2C /* star3.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CA4DA915BB985A007FCD2C /* star3.png */; };
 		72CA4DAF15BB985A007FCD2C /* star4.png in Resources */ = {isa = PBXBuildFile; fileRef = 72CA4DAA15BB985A007FCD2C /* star4.png */; };
+		72FBC6F215BC9105005A8761 /* face_spiral.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FBC6F115BC9105005A8761 /* face_spiral.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		72CA4DA815BB985A007FCD2C /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star2.png; sourceTree = "<group>"; };
 		72CA4DA915BB985A007FCD2C /* star3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star3.png; sourceTree = "<group>"; };
 		72CA4DAA15BB985A007FCD2C /* star4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star4.png; sourceTree = "<group>"; };
+		72FBC6F115BC9105005A8761 /* face_spiral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_spiral.png; path = Resources/face_spiral.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 		7216241615BB84B80001877E /* SeeMeHearMeTouchMe */ = {
 			isa = PBXGroup;
 			children = (
+				72FBC6F115BC9105005A8761 /* face_spiral.png */,
 				72CA4DA515BB985A007FCD2C /* Resources */,
 				7216241F15BB84B80001877E /* AppDelegate.h */,
 				7216242015BB84B80001877E /* AppDelegate.m */,
@@ -383,6 +386,7 @@
 				72104D6D15BC7E8900653500 /* title_bar.png in Resources */,
 				72104D7415BC7F1300653500 /* Icon-72.png in Resources */,
 				72104D7615BC7F1A00653500 /* Icon-72@2x.png in Resources */,
+				72FBC6F215BC9105005A8761 /* face_spiral.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

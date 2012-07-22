@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E2620" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -15,31 +15,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="NhL-Ye-8SI" userLabel="Video Particle">
+                            <view contentMode="scaleToFill" id="qXu-Qb-ZBg">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="qXu-Qb-ZBg">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" id="10" userLabel="Video View" customClass="GLKView">
-                                                <rect key="frame" x="128" y="-128" width="768" height="1024"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <gestureRecognizers/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="neg-Kz-K71" customClass="DWFParticleView">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <view contentMode="scaleToFill" id="10" userLabel="Video View" customClass="GLKView">
+                                        <rect key="frame" x="128" y="-128" width="768" height="1024"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <gestureRecognizers/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="neg-Kz-K71" customClass="DWFParticleView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_bar.png" id="aPt-MV-gsD" userLabel="Title Bar">
@@ -164,6 +157,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="effectFire:" destination="neg-Kz-K71" eventType="touchUpInside" id="WvS-h3-BL4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MrI-Dh-qsv">
                                         <rect key="frame" x="691" y="26" width="64" height="64"/>
@@ -193,7 +189,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8rd-Bw-8Y6">
-                                        <rect key="frame" x="846" y="26" width="64" height="64"/>
+                                        <rect key="frame" x="1005" y="26" width="64" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="icon2-6.png">
@@ -215,9 +211,12 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="effectZZZ:" destination="neg-Kz-K71" eventType="touchUpInside" id="EKd-kB-Iox"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F0o-BU-O8z">
-                                        <rect key="frame" x="999" y="26" width="64" height="64"/>
+                                        <rect key="frame" x="845" y="26" width="64" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="icon2-8.png">
@@ -227,6 +226,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="effectLOL:" destination="neg-Kz-K71" eventType="touchUpInside" id="cRa-5l-n4s"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -267,6 +269,36 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="lQH-BZ-ozZ">
+                                <rect key="frame" x="896" y="0.0" width="56" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moon:" destination="2" eventType="touchUpInside" id="hzb-Na-J7R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xxi-Sg-kPD">
+                                <rect key="frame" x="120" y="12" width="56" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleFaceDetection:" destination="2" eventType="touchUpInside" id="Moi-Y4-TTJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -276,6 +308,7 @@
                     <connections>
                         <outlet property="camerasControl" destination="16" id="19"/>
                         <outlet property="fireView" destination="neg-Kz-K71" id="gjZ-Ja-vyu"/>
+                        <outlet property="particleView" destination="neg-Kz-K71" id="Gkd-mL-i8T"/>
                         <outlet property="previewView" destination="10" id="11"/>
                     </connections>
                 </viewController>
@@ -310,19 +343,24 @@
         <class className="DWFParticleView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DWFParticleView.h"/>
             <relationships>
+                <relationship kind="action" name="effectFire:"/>
                 <relationship kind="action" name="effectHearts:"/>
+                <relationship kind="action" name="effectLOL:"/>
                 <relationship kind="action" name="effectStars:"/>
+                <relationship kind="action" name="effectZZZ:"/>
             </relationships>
         </class>
         <class className="SquareCamViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SquareCamViewController.h"/>
             <relationships>
                 <relationship kind="action" name="handlePinchGesture:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="moon:"/>
                 <relationship kind="action" name="switchCameras:"/>
                 <relationship kind="action" name="takePicture:"/>
                 <relationship kind="action" name="toggleFaceDetection:"/>
                 <relationship kind="outlet" name="camerasControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="fireView" candidateClass="DWFParticleView"/>
+                <relationship kind="outlet" name="particleView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="previewView" candidateClass="GLKView"/>
             </relationships>
         </class>
