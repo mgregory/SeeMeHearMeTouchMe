@@ -779,6 +779,7 @@ bail:
 {
 
     [super viewDidLoad];
+	previewView.transform = CGAffineTransformMakeRotation(-M_PI_2);
 	// Do any additional setup after loading the view, typically from a nib.
 	[self setupAVCapture];
 	square = [UIImage imageNamed:@"squarePNG"];
@@ -839,8 +840,9 @@ bail:
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+	return ( (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight) );
     // Return YES for supported orientations
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer

@@ -26,4 +26,8 @@
 -(void)setEmitterPositionFromTouch: (UITouch*)t;
 -(void)setIsEmitting:(BOOL)isEmitting;
 
+
+- (IBAction)effectStars:(id)sender;
+- (IBAction)effectHearts:(id)sender;
+
 @end
