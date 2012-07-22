@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7216241115BB84B80001877E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241015BB84B80001877E /* UIKit.framework */; };
+		7216241315BB84B80001877E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241215BB84B80001877E /* Foundation.framework */; };
+		7216241515BB84B80001877E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241415BB84B80001877E /* CoreGraphics.framework */; };
+		7216241B15BB84B80001877E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7216241915BB84B80001877E /* InfoPlist.strings */; };
+		7216241D15BB84B80001877E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216241C15BB84B80001877E /* main.m */; };
+		7216242115BB84B80001877E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216242015BB84B80001877E /* AppDelegate.m */; };
+		7216242415BB84B80001877E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216242215BB84B80001877E /* MainStoryboard_iPhone.storyboard */; };
+		7216242715BB84B80001877E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216242515BB84B80001877E /* MainStoryboard_iPad.storyboard */; };
+		7216242A15BB84B80001877E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7216242915BB84B80001877E /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7216240C15BB84B80001877E /* SeeMeHearMeTouchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeMeHearMeTouchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7216241015BB84B80001877E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7216241215BB84B80001877E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7216241415BB84B80001877E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7216241815BB84B80001877E /* SeeMeHearMeTouchMe-Info.plist */ = {isa = PBXFileReference; path = "SeeMeHearMeTouchMe-Info.plist"; sourceTree = "<group>"; };
+		7216241A15BB84B80001877E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7216241C15BB84B80001877E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7216241E15BB84B80001877E /* SeeMeHearMeTouchMe-Prefix.pch */ = {isa = PBXFileReference; path = "SeeMeHearMeTouchMe-Prefix.pch"; sourceTree = "<group>"; };
+		7216241F15BB84B80001877E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7216242015BB84B80001877E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7216242315BB84B80001877E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7216242615BB84B80001877E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7216242815BB84B80001877E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		7216242915BB84B80001877E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7216240915BB84B80001877E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7216241115BB84B80001877E /* UIKit.framework in Frameworks */,
+				7216241315BB84B80001877E /* Foundation.framework in Frameworks */,
+				7216241515BB84B80001877E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7216240115BB84B80001877E = {
+			isa = PBXGroup;
+			children = (
+				7216241615BB84B80001877E /* SeeMeHearMeTouchMe */,
+				7216240F15BB84B80001877E /* Frameworks */,
+				7216240D15BB84B80001877E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7216240D15BB84B80001877E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7216240C15BB84B80001877E /* SeeMeHearMeTouchMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7216240F15BB84B80001877E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7216241015BB84B80001877E /* UIKit.framework */,
+				7216241215BB84B80001877E /* Foundation.framework */,
+				7216241415BB84B80001877E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7216241615BB84B80001877E /* SeeMeHearMeTouchMe */ = {
+			isa = PBXGroup;
+			children = (
+				7216241F15BB84B80001877E /* AppDelegate.h */,
+				7216242015BB84B80001877E /* AppDelegate.m */,
+				7216242215BB84B80001877E /* MainStoryboard_iPhone.storyboard */,
+				7216242515BB84B80001877E /* MainStoryboard_iPad.storyboard */,
+				7216242815BB84B80001877E /* ViewController.h */,
+				7216242915BB84B80001877E /* ViewController.m */,
+				7216241715BB84B80001877E /* Supporting Files */,
+			);
+			path = SeeMeHearMeTouchMe;
+			sourceTree = "<group>";
+		};
+		7216241715BB84B80001877E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7216241815BB84B80001877E /* SeeMeHearMeTouchMe-Info.plist */,
+				7216241915BB84B80001877E /* InfoPlist.strings */,
+				7216241C15BB84B80001877E /* main.m */,
+				7216241E15BB84B80001877E /* SeeMeHearMeTouchMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7216240B15BB84B80001877E /* SeeMeHearMeTouchMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7216242D15BB84B80001877E /* Build configuration list for PBXNativeTarget "SeeMeHearMeTouchMe" */;
+			buildPhases = (
+				7216240815BB84B80001877E /* Sources */,
+				7216240915BB84B80001877E /* Frameworks */,
+				7216240A15BB84B80001877E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeeMeHearMeTouchMe;
+			productName = SeeMeHearMeTouchMe;
+			productReference = 7216240C15BB84B80001877E /* SeeMeHearMeTouchMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7216240315BB84B80001877E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7216240615BB84B80001877E /* Build configuration list for PBXProject "SeeMeHearMeTouchMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7216240115BB84B80001877E;
+			productRefGroup = 7216240D15BB84B80001877E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7216240B15BB84B80001877E /* SeeMeHearMeTouchMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7216240A15BB84B80001877E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7216241B15BB84B80001877E /* InfoPlist.strings in Resources */,
+				7216242415BB84B80001877E /* MainStoryboard_iPhone.storyboard in Resources */,
+				7216242715BB84B80001877E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7216240815BB84B80001877E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7216241D15BB84B80001877E /* main.m in Sources */,
+				7216242115BB84B80001877E /* AppDelegate.m in Sources */,
+				7216242A15BB84B80001877E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7216241915BB84B80001877E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7216241A15BB84B80001877E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7216242215BB84B80001877E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7216242315BB84B80001877E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7216242515BB84B80001877E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7216242615BB84B80001877E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7216242B15BB84B80001877E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7216242C15BB84B80001877E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7216242E15BB84B80001877E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeMeHearMeTouchMe/SeeMeHearMeTouchMe-Prefix.pch";
+				INFOPLIST_FILE = "SeeMeHearMeTouchMe/SeeMeHearMeTouchMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7216242F15BB84B80001877E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SeeMeHearMeTouchMe/SeeMeHearMeTouchMe-Prefix.pch";
+				INFOPLIST_FILE = "SeeMeHearMeTouchMe/SeeMeHearMeTouchMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7216240615BB84B80001877E /* Build configuration list for PBXProject "SeeMeHearMeTouchMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7216242B15BB84B80001877E /* Debug */,
+				7216242C15BB84B80001877E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7216242D15BB84B80001877E /* Build configuration list for PBXNativeTarget "SeeMeHearMeTouchMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7216242E15BB84B80001877E /* Debug */,
+				7216242F15BB84B80001877E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7216240315BB84B80001877E /* Project object */;
+}
