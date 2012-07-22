@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72104D4215BC778A00653500 /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 72104D4115BC778A00653500 /* Particles_fire.png */; };
 		7216241115BB84B80001877E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241015BB84B80001877E /* UIKit.framework */; };
 		7216241315BB84B80001877E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241215BB84B80001877E /* Foundation.framework */; };
 		7216241515BB84B80001877E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7216241415BB84B80001877E /* CoreGraphics.framework */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72104D4115BC778A00653500 /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
 		7216240C15BB84B80001877E /* SeeMeHearMeTouchMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeMeHearMeTouchMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7216241015BB84B80001877E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7216241215BB84B80001877E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,8 +169,8 @@
 				7216242515BB84B80001877E /* MainStoryboard_iPad.storyboard */,
 				7216244B15BB86E40001877E /* SquareCamViewController.h */,
 				7216244A15BB86E40001877E /* SquareCamViewController.m */,
-				7216245915BB8CAA0001877E /* DWFParticleView.m */,
 				7216245A15BB8CAA0001877E /* DWFParticleView.h */,
+				7216245915BB8CAA0001877E /* DWFParticleView.m */,
 				7216241715BB84B80001877E /* Supporting Files */,
 			);
 			path = SeeMeHearMeTouchMe;
@@ -188,6 +190,7 @@
 		72CA4DA515BB985A007FCD2C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72104D4115BC778A00653500 /* Particles_fire.png */,
 				72B0D87615BBB4CB00C41B3E /* squarePNG.png */,
 				72CA4DA615BB985A007FCD2C /* Poppy.png */,
 				72CA4DA715BB985A007FCD2C /* star1.png */,
@@ -287,6 +290,7 @@
 				7285652A15BBE1940011BAF9 /* StoneSpiral.png in Resources */,
 				7285652B15BBE1940011BAF9 /* sub_particle1.png in Resources */,
 				7285652C15BBE1940011BAF9 /* zzz1.png in Resources */,
+				72104D4215BC778A00653500 /* Particles_fire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -193,7 +193,7 @@ static CGContextRef CreateCGBitmapContextForSize(CGSize size)
 	CALayer *rootLayer = [previewView layer];
 	[rootLayer setMasksToBounds:YES];
 	[previewLayer setFrame:[rootLayer bounds]];
-	//[rootLayer addSublayer:previewLayer];
+	[rootLayer addSublayer:previewLayer];
     [session commitConfiguration];
 	[session startRunning];
 
@@ -255,11 +255,13 @@ bail:
 // utility routing used during image capture to set up capture orientation
 - (AVCaptureVideoOrientation)avOrientationForDeviceOrientation:(UIDeviceOrientation)deviceOrientation
 {
+	
 	AVCaptureVideoOrientation result = deviceOrientation;
 	if ( deviceOrientation == UIDeviceOrientationLandscapeLeft )
 		result = AVCaptureVideoOrientationLandscapeRight;
 	else if ( deviceOrientation == UIDeviceOrientationLandscapeRight )
 		result = AVCaptureVideoOrientationLandscapeLeft;
+
 	return result;
 }
 

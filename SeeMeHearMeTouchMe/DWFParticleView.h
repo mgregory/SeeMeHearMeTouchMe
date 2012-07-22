@@ -17,6 +17,11 @@
 #import <UIKit/UIKit.h>
 
 @interface DWFParticleView : UIView
+{
+	CGFloat birthRate;
+}
+
+
 
 -(void)setEmitterPositionFromTouch: (UITouch*)t;
 -(void)setIsEmitting:(BOOL)isEmitting;
